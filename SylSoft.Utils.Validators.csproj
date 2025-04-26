@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IDateValidationService\IDateValidationService.cs" Link="IDateValidationService.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IValidatorRule\IValidatorRule.cs" Link="IValidatorRule.cs" />
+  </ItemGroup>
+
+</Project>

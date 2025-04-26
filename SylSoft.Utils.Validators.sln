@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SylSoft.Utils.Validators", "SylSoft.Utils.Validators.csproj", "{FEAE6E46-3361-47C5-9A0B-63DFF2C32A8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEAE6E46-3361-47C5-9A0B-63DFF2C32A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEAE6E46-3361-47C5-9A0B-63DFF2C32A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEAE6E46-3361-47C5-9A0B-63DFF2C32A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEAE6E46-3361-47C5-9A0B-63DFF2C32A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C8734E6-861D-48D4-9A54-BB5BFD8F3CF1}
+	EndGlobalSection
+EndGlobal
