@@ -9,7 +9,12 @@
   <ItemGroup>
     <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IDateValidationService\IDateValidationService.cs" Link="IDateValidationService.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IValidatorRule\IValidatorRule.cs" Link="IValidatorRule.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.AlphanumericValidator\AlphanumericValidator.cs" Link="AlphanumericValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.Base64Validator\Base64Validator.cs" Link="Base64Validator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.CreditCardValidator\CreditCardValidator.cs" Link="CreditCardValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.DateService\DateService.cs" Link="DateService.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Global.EmailValidator\EmailValidator.cs" Link="EmailValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.GuidValidator\GuidValidator.cs" Link="GuidValidator.cs" />
   </ItemGroup>
 
 </Project>
