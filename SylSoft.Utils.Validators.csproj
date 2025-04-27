@@ -15,6 +15,18 @@
     <Compile Include="..\SylSoft.Utils.Validators.Global.DateService\DateService.cs" Link="DateService.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Global.EmailValidator\EmailValidator.cs" Link="EmailValidator.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Global.GuidValidator\GuidValidator.cs" Link="GuidValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.HexColorValidator\HexColorValidator.cs" Link="HexColorValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.IBANValidator\IBANValidator.cs" Link="IBANValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.IpValidator\IpValidator.cs" Link="IpValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.LuhnValidator\LuhnValidator.cs" Link="LuhnValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.NumericValidator\NumericValidator.cs" Link="NumericValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.PasswordStrengthValidator\PasswordStrengthValidator.cs" Link="PasswordStrengthValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.PhoneValidator\PhoneValidator.cs" Link="PhoneValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.UrlValidator\UrlValidator.cs" Link="UrlValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="libphonenumber-csharp" Version="9.0.4" />
   </ItemGroup>
 
 </Project>
