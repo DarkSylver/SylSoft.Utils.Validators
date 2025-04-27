@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SylSoft.Utils.Validators</id>
+    <version>1.0.0</version>
+    <authors>SylSoft</authors>
+    <owners>SylSoft</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/SylSoft/SylSoft.Utils.Validators</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A lightweight .NET library for validating common formats and country-specific data.</description>
+    <tags>validators, .NET, C#</tags>
+  </metadata>
+</package>
