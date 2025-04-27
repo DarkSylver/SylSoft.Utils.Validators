@@ -110,7 +110,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## ❤️ Support
 
 If you find this library useful, consider sponsoring the project to help continue development!  
-[Become a Sponsor ✨](https://github.com/sponsors/YourUsername)
+[Become a Sponsor ✨](https://github.com/sponsors/DarkSylver)
 
 ---
 
