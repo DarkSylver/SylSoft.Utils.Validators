@@ -9,6 +9,7 @@
   <ItemGroup>
     <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IDateValidationService\IDateValidationService.cs" Link="IDateValidationService.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IValidatorRule\IValidatorRule.cs" Link="IValidatorRule.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.EmailValidator\EmailValidator.cs" Link="EmailValidator.cs" />
   </ItemGroup>
 
 </Project>

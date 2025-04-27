@@ -1,4 +1,5 @@
 ﻿using SylSoft.Utils.Validators.Core.Interfaces;
+using SylSoft.Utils.Validators.Global;
 
 namespace SylSoft.Utils.Validators
 {
