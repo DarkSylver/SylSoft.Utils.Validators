@@ -2,19 +2,23 @@
 
   <PropertyGroup>
 	  <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <ApplicationIcon>icon.ico</ApplicationIcon>
+	  <Description>SylSoft.Utils.Validators is a comprehensive library for .NET validation, including global and country-specific rules, designed to be lightweight, extensible, and fully offline.</Description>
 	  <Deterministic>false</Deterministic>
+	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
+	  <OutputType>Library</OutputType>
 	  <PackageIcon>icon.png</PackageIcon>
-	  <PackAsTool>True</PackAsTool>
+	  <PackageIconUrl>https://raw.githubusercontent.com/DarkSylver/SylSoft.Utils.Validators/main/icon.png</PackageIconUrl>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <PackageProjectUrl>https://github.com/DarkSylver/SylSoft.Utils.Validators</PackageProjectUrl>
+	  <PackageReadmeFile>readme.md</PackageReadmeFile>
 	  <RepositoryType>git</RepositoryType>
 	  <RepositoryUrl>https://github.com/Sylsoft-Software-Design/SylSoft.Utils.Validators</RepositoryUrl>
 	  <SignAssembly>False</SignAssembly>
-	<PackageReadmeFile>readme.md</PackageReadmeFile>
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	  <VersionPrefix>0.3</VersionPrefix>
+	  <VersionPrefix>0.4</VersionPrefix>
 	  <VersionSuffix>a</VersionSuffix>
   </PropertyGroup>
 
@@ -56,7 +60,7 @@
 
 	<ItemGroup>
 		<None Include="icon.png">
-			<Pack>True</Pack>
+			<Pack>false</Pack>
 			<PackagePath>icon.png</PackagePath>
 		</None>
 	</ItemGroup>
@@ -65,6 +69,10 @@
 
 	<ItemGroup>
 		<None Include="readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>

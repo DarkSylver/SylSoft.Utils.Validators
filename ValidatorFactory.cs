@@ -35,12 +35,45 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Validates if the input string is alphanumeric.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string contains only letters and numbers; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Alphanumeric(string input)
+        {
+            return new AlphanumericValidator().Validate(input);
+        }
+
+        /// <summary>
         /// Creates a base64 string validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="Base64Validator"/>.</returns>
         public static IValidatorRule Base64()
         {
             return new Base64Validator();
+        }
+
+        /// <summary>
+        /// Validates if the input string is a valid Base64 string.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid Base64 string; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Base64(string input)
+        {
+            return new Base64Validator().Validate(input);
+        }
+
+        /// <summary>
+        /// Validates if the input string is a valid credit card number.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid credit card number; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool CreditCard(string input)
+        {
+            return new CreditCardValidator().Validate(input);
         }
 
         /// <summary>
@@ -62,12 +95,34 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Validates if the input string is a valid email address.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid email address; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Email(string input)
+        {
+            return new EmailValidator().Validate(input);
+        }
+
+        /// <summary>
         /// Creates an email validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="EmailValidator"/>.</returns>
         public static IValidatorRule Email()
         {
             return new EmailValidator();
+        }
+
+        /// <summary>
+        /// Validates if the input string is a valid GUID.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid GUID; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Guid(string input)
+        {
+            return new GuidValidator().Validate(input);
         }
 
         /// <summary>
@@ -80,12 +135,34 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Validates if the input string is a valid hex color.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid hex color; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool HexColor(string input)
+        {
+            return new HexColorValidator().Validate(input);
+        }
+
+        /// <summary>
         /// Creates a hex color validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="HexColorValidator"/>.</returns>
         public static IValidatorRule HexColor()
         {
             return new HexColorValidator();
+        }
+
+        /// <summary>
+        /// Validates if the input string is a valid IBAN.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid IBAN; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool IBAN(string input)
+        {
+            return new IBANValidator().Validate(input);
         }
 
         /// <summary>
@@ -98,12 +175,34 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Validates if the input string is a valid IP address.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid IP address; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Ip(string input)
+        {
+            return new IpValidator().Validate(input);
+        }
+
+        /// <summary>
         /// Creates an IP address validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="IpValidator"/>.</returns>
         public static IValidatorRule Ip()
         {
             return new IpValidator();
+        }
+
+        /// <summary>
+        /// Validates if the input string passes the Luhn algorithm.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string passes the Luhn algorithm; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Luhn(string input)
+        {
+            return new LuhnValidator().Validate(input);
         }
 
         /// <summary>
@@ -116,12 +215,34 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Validates if the input string is numeric.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is numeric; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Numeric(string input)
+        {
+            return new NumericValidator().Validate(input);
+        }
+
+        /// <summary>
         /// Creates a numeric validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="NumericValidator"/>.</returns>
         public static IValidatorRule Numeric()
         {
             return new NumericValidator();
+        }
+
+        /// <summary>
+        /// Validates if the input string meets password strength requirements.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string meets password strength requirements; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool PasswordStrength(string input)
+        {
+            return new PasswordStrengthValidator().Validate(input);
         }
 
         /// <summary>
@@ -134,12 +255,34 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Validates if the input string is a valid phone number.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid phone number; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Phone(string input)
+        {
+            return new PhoneValidator().Validate(input);
+        }
+
+        /// <summary>
         /// Creates a phone number validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="PhoneValidator"/>.</returns>
         public static IValidatorRule Phone()
         {
             return new PhoneValidator();
+        }
+
+        /// <summary>
+        /// Validates if the input string is a valid URL.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the input string is a valid URL; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool Url(string input)
+        {
+            return new UrlValidator().Validate(input);
         }
 
         /// <summary>
@@ -165,12 +308,34 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid Alias CBU for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid Alias CBU; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool AliasCBU(string input)
+        //{
+        //    return new AliasCBUValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a CBU validation rule for Argentina.
         ///// </summary>
         ///// <returns>An instance of the <see cref="CBUValidator"/>.</returns>
         //public static IValidatorRule CBU()
         //{
         //    return new CBUValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid CBU for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CBU; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CBU(string input)
+        //{
+        //    return new CBUValidator().Validate(input);
         //}
 
         ///// <summary>
@@ -183,12 +348,34 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid CUIL for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CUIL; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CUIL(string input)
+        //{
+        //    return new CUILValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a CUIT validation rule for Argentina.
         ///// </summary>
         ///// <returns>An instance of the <see cref="CUITValidator"/>.</returns>
         //public static IValidatorRule CUIT()
         //{
         //    return new CUITValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid CUIT for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CUIT; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CUIT(string input)
+        //{
+        //    return new CUITValidator().Validate(input);
         //}
 
         ///// <summary>
@@ -201,6 +388,17 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid DNI for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid DNI; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool DNI(string input)
+        //{
+        //    return new DNIValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a vehicle patent validation rule for Argentina.
         ///// </summary>
         ///// <returns>An instance of the <see cref="PatenteValidator"/>.</returns>
@@ -210,12 +408,34 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid vehicle patent for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid vehicle patent; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool Patente(string input)
+        //{
+        //    return new PatenteValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a phone number validation rule for Argentina.
         ///// </summary>
         ///// <returns>An instance of the <see cref="TelefonoValidator"/>.</returns>
         //public static IValidatorRule TelefonoAR()
         //{
         //    return new TelefonoValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid phone number for Argentina.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid phone number; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool TelefonoAR(string input)
+        //{
+        //    return new TelefonoValidator().Validate(input);
         //}
 
         //#endregion Argentina Validators
@@ -232,12 +452,34 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid CNPJ for Brazil.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CNPJ; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CNPJ(string input)
+        //{
+        //    return new CNPJValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a CPF validation rule for Brazil.
         ///// </summary>
         ///// <returns>An instance of the <see cref="CPFValidator"/>.</returns>
         //public static IValidatorRule CPF()
         //{
         //    return new CPFValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid CPF for Brazil.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CPF; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CPF(string input)
+        //{
+        //    return new CPFValidator().Validate(input);
         //}
 
         //#endregion Brazil Validators
@@ -254,12 +496,45 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid CIF for Spain.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CIF; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CIF(string input)
+        //{
+        //    return new CIFValidator().Validate(input);
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid NIE for Spain.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid NIE; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool NIE(string input)
+        //{
+        //    return new NIEValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a NIE validation rule for Spain.
         ///// </summary>
         ///// <returns>An instance of the <see cref="NIEValidator"/>.</returns>
         //public static IValidatorRule NIE()
         //{
         //    return new NIEValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid NIF for Spain.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid NIF; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool NIF(string input)
+        //{
+        //    return new NIFValidator().Validate(input);
         //}
 
         ///// <summary>
@@ -285,6 +560,28 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid SSN for the USA.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid SSN; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool SSN(string input)
+        //{
+        //    return new SSNValidator().Validate(input);
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid ZIP code for the USA.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid ZIP code; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool ZipCodeUS(string input)
+        //{
+        //    return new ZipCodeValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a ZIP code validation rule for the USA.
         ///// </summary>
         ///// <returns>An instance of the <see cref="ZipCodeValidator"/>.</returns>
@@ -307,12 +604,45 @@ namespace SylSoft.Utils.Validators
         //}
 
         ///// <summary>
+        ///// Validates if the input string is a valid postal code for Mexico.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid postal code; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CodigoPostalMX(string input)
+        //{
+        //    return new CodigoPostalValidator().Validate(input);
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid CURP for Mexico.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid CURP; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool CURP(string input)
+        //{
+        //    return new CURPValidator().Validate(input);
+        //}
+
+        ///// <summary>
         ///// Creates a CURP validation rule for Mexico.
         ///// </summary>
         ///// <returns>An instance of the <see cref="CURPValidator"/>.</returns>
         //public static IValidatorRule CURP()
         //{
         //    return new CURPValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid RFC for Mexico.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid RFC; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool RFC(string input)
+        //{
+        //    return new RFCValidator().Validate(input);
         //}
 
         ///// <summary>
@@ -335,6 +665,17 @@ namespace SylSoft.Utils.Validators
         //public static IValidatorRule RUT()
         //{
         //    return new RUTValidator();
+        //}
+
+        ///// <summary>
+        ///// Validates if the input string is a valid RUT for Chile.
+        ///// </summary>
+        ///// <returns>
+        ///// Returns <c>true</c> if the input string is a valid RUT; otherwise, <c>false</c>.
+        ///// </returns>
+        //public static bool RUT(string input)
+        //{
+        //    return new RUTValidator().Validate(input);
         //}
 
         //#endregion Chile Validators

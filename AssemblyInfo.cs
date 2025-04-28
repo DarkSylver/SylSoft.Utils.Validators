@@ -24,5 +24,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyMetadata("RepositoryUrl", "https://github.com/Sylsoft-Software-Design/SylSoft.Utils.Validators")]
 [assembly: AssemblyTitle("SylSoft.Utils.Validators")]
 [assembly: AssemblyTrademark("Copyright © Cristian Miguel Zangaro 2025 SylSoft")]
-[assembly: AssemblyVersion("0.3.*")]
+[assembly: AssemblyVersion("0.4.*")]
 [assembly: Guid("b02507de-0f0e-4012-a991-f3433c977868")]
