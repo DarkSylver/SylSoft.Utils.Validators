@@ -1,9 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	  <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+	  <ApplicationIcon>icon.ico</ApplicationIcon>
+	  <Deterministic>false</Deterministic>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <PackageIcon>icon.png</PackageIcon>
+	  <PackAsTool>True</PackAsTool>
+	  <RepositoryType>git</RepositoryType>
+	  <RepositoryUrl>https://github.com/Sylsoft-Software-Design/SylSoft.Utils.Validators</RepositoryUrl>
+	  <SignAssembly>False</SignAssembly>
+	<PackageReadmeFile>readme.md</PackageReadmeFile>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <VersionPrefix>0.3</VersionPrefix>
+	  <VersionSuffix>a</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +34,11 @@
     <Compile Include="..\SylSoft.Utils.Validators.Global.NumericValidator\NumericValidator.cs" Link="Validators\Global\NumericValidator.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Global.PasswordStrengthValidator\PasswordStrengthValidator.cs" Link="Validators\Global\PasswordStrengthValidator.cs" />
     <Compile Include="..\SylSoft.Utils.Validators.Global.PhoneValidator\PhoneValidator.cs" Link="Validators\Global\PhoneValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.UrlValidator\UrlValidator.cs" Link="UrlValidator.cs" />
+    <Compile Include="..\SylSoft.Utils.Validators.Global.UrlValidator\UrlValidator.cs" Link="Validators\Global\UrlValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,5 +49,22 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Validators\Global\" />
   </ItemGroup>
+
+	<PropertyGroup>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png">
+			<Pack>True</Pack>
+			<PackagePath>icon.png</PackagePath>
+		</None>
+	</ItemGroup>
+
+
+
+	<ItemGroup>
+		<None Include="readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
