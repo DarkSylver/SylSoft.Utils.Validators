@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+	  <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <ApplicationIcon>icon.ico</ApplicationIcon>
 	  <Deterministic>false</Deterministic>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
 	  <PackageIcon>icon.png</PackageIcon>
