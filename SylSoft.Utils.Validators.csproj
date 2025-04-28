@@ -2,7 +2,6 @@
 
   <PropertyGroup>
 	  <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
-	  <ApplicationIcon>icon.ico</ApplicationIcon>
 	  <Description>SylSoft.Utils.Validators is a comprehensive library for .NET validation, including global and country-specific rules, designed to be lightweight, extensible, and fully offline.</Description>
 	  <Deterministic>false</Deterministic>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -11,7 +10,6 @@
 	  <Nullable>enable</Nullable>
 	  <OutputType>Library</OutputType>
 	  <PackageIcon>icon.png</PackageIcon>
-	  <PackageIconUrl>https://raw.githubusercontent.com/DarkSylver/SylSoft.Utils.Validators/main/icon.png</PackageIconUrl>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
 	  <PackageProjectUrl>https://github.com/DarkSylver/SylSoft.Utils.Validators</PackageProjectUrl>
 	  <PackageReadmeFile>readme.md</PackageReadmeFile>
@@ -20,7 +18,7 @@
 	  <SignAssembly>False</SignAssembly>
 	  
 	  <VersionPrefix>0.4</VersionPrefix>
-	  <VersionSuffix>b</VersionSuffix>
+	  <VersionSuffix>c</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -43,10 +41,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="icon.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="libphonenumber-csharp" Version="9.0.4" />
   </ItemGroup>
 
@@ -56,15 +50,15 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<None Include="icon.png" Pack="true" PackagePath="\" />
+		<None Include="icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="readme.md" Pack="true" PackagePath="\" />
+		<None Include="readme.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="LICENSE" Pack="true" PackagePath="\" />
+		<None Include="LICENSE" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>
