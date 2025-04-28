@@ -153,190 +153,190 @@ namespace SylSoft.Utils.Validators
 
         #endregion Global Validators
 
-        #region Argentina Validators
+        //#region Argentina Validators
 
-        /// <summary>
-        /// Creates an Alias CBU validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="AliasCBUValidator"/>.</returns>
-        public static IValidatorRule AliasCBU()
-        {
-            return new AliasCBUValidator();
-        }
+        ///// <summary>
+        ///// Creates an Alias CBU validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="AliasCBUValidator"/>.</returns>
+        //public static IValidatorRule AliasCBU()
+        //{
+        //    return new AliasCBUValidator();
+        //}
 
-        /// <summary>
-        /// Creates a CBU validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CBUValidator"/>.</returns>
-        public static IValidatorRule CBU()
-        {
-            return new CBUValidator();
-        }
+        ///// <summary>
+        ///// Creates a CBU validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CBUValidator"/>.</returns>
+        //public static IValidatorRule CBU()
+        //{
+        //    return new CBUValidator();
+        //}
 
-        /// <summary>
-        /// Creates a CUIL validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CUILValidator"/>.</returns>
-        public static IValidatorRule CUIL()
-        {
-            return new CUILValidator();
-        }
+        ///// <summary>
+        ///// Creates a CUIL validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CUILValidator"/>.</returns>
+        //public static IValidatorRule CUIL()
+        //{
+        //    return new CUILValidator();
+        //}
 
-        /// <summary>
-        /// Creates a CUIT validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CUITValidator"/>.</returns>
-        public static IValidatorRule CUIT()
-        {
-            return new CUITValidator();
-        }
+        ///// <summary>
+        ///// Creates a CUIT validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CUITValidator"/>.</returns>
+        //public static IValidatorRule CUIT()
+        //{
+        //    return new CUITValidator();
+        //}
 
-        /// <summary>
-        /// Creates a DNI validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="DNIValidator"/>.</returns>
-        public static IValidatorRule DNI()
-        {
-            return new DNIValidator();
-        }
+        ///// <summary>
+        ///// Creates a DNI validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="DNIValidator"/>.</returns>
+        //public static IValidatorRule DNI()
+        //{
+        //    return new DNIValidator();
+        //}
 
-        /// <summary>
-        /// Creates a vehicle patent validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="PatenteValidator"/>.</returns>
-        public static IValidatorRule Patente()
-        {
-            return new PatenteValidator();
-        }
+        ///// <summary>
+        ///// Creates a vehicle patent validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="PatenteValidator"/>.</returns>
+        //public static IValidatorRule Patente()
+        //{
+        //    return new PatenteValidator();
+        //}
 
-        /// <summary>
-        /// Creates a phone number validation rule for Argentina.
-        /// </summary>
-        /// <returns>An instance of the <see cref="TelefonoValidator"/>.</returns>
-        public static IValidatorRule TelefonoAR()
-        {
-            return new TelefonoValidator();
-        }
+        ///// <summary>
+        ///// Creates a phone number validation rule for Argentina.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="TelefonoValidator"/>.</returns>
+        //public static IValidatorRule TelefonoAR()
+        //{
+        //    return new TelefonoValidator();
+        //}
 
-        #endregion Argentina Validators
+        //#endregion Argentina Validators
 
-        #region Brazil Validators
+        //#region Brazil Validators
 
-        /// <summary>
-        /// Creates a CNPJ validation rule for Brazil.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CNPJValidator"/>.</returns>
-        public static IValidatorRule CNPJ()
-        {
-            return new CNPJValidator();
-        }
+        ///// <summary>
+        ///// Creates a CNPJ validation rule for Brazil.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CNPJValidator"/>.</returns>
+        //public static IValidatorRule CNPJ()
+        //{
+        //    return new CNPJValidator();
+        //}
 
-        /// <summary>
-        /// Creates a CPF validation rule for Brazil.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CPFValidator"/>.</returns>
-        public static IValidatorRule CPF()
-        {
-            return new CPFValidator();
-        }
+        ///// <summary>
+        ///// Creates a CPF validation rule for Brazil.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CPFValidator"/>.</returns>
+        //public static IValidatorRule CPF()
+        //{
+        //    return new CPFValidator();
+        //}
 
-        #endregion Brazil Validators
+        //#endregion Brazil Validators
 
-        #region Spain Validators
+        //#region Spain Validators
 
-        /// <summary>
-        /// Creates a CIF validation rule for Spain.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CIFValidator"/>.</returns>
-        public static IValidatorRule CIF()
-        {
-            return new CIFValidator();
-        }
+        ///// <summary>
+        ///// Creates a CIF validation rule for Spain.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CIFValidator"/>.</returns>
+        //public static IValidatorRule CIF()
+        //{
+        //    return new CIFValidator();
+        //}
 
-        /// <summary>
-        /// Creates a NIE validation rule for Spain.
-        /// </summary>
-        /// <returns>An instance of the <see cref="NIEValidator"/>.</returns>
-        public static IValidatorRule NIE()
-        {
-            return new NIEValidator();
-        }
+        ///// <summary>
+        ///// Creates a NIE validation rule for Spain.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="NIEValidator"/>.</returns>
+        //public static IValidatorRule NIE()
+        //{
+        //    return new NIEValidator();
+        //}
 
-        /// <summary>
-        /// Creates a NIF validation rule for Spain.
-        /// </summary>
-        /// <returns>An instance of the <see cref="NIFValidator"/>.</returns>
-        public static IValidatorRule NIF()
-        {
-            return new NIFValidator();
-        }
+        ///// <summary>
+        ///// Creates a NIF validation rule for Spain.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="NIFValidator"/>.</returns>
+        //public static IValidatorRule NIF()
+        //{
+        //    return new NIFValidator();
+        //}
 
-        #endregion Spain Validators
+        //#endregion Spain Validators
 
-        #region USA Validators
+        //#region USA Validators
 
-        /// <summary>
-        /// Creates a SSN validation rule for the USA.
-        /// </summary>
-        /// <returns>An instance of the <see cref="SSNValidator"/>.</returns>
-        public static IValidatorRule SSN()
-        {
-            return new SSNValidator();
-        }
+        ///// <summary>
+        ///// Creates a SSN validation rule for the USA.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="SSNValidator"/>.</returns>
+        //public static IValidatorRule SSN()
+        //{
+        //    return new SSNValidator();
+        //}
 
-        /// <summary>
-        /// Creates a ZIP code validation rule for the USA.
-        /// </summary>
-        /// <returns>An instance of the <see cref="ZipCodeValidator"/>.</returns>
-        public static IValidatorRule ZipCodeUS()
-        {
-            return new ZipCodeValidator();
-        }
+        ///// <summary>
+        ///// Creates a ZIP code validation rule for the USA.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="ZipCodeValidator"/>.</returns>
+        //public static IValidatorRule ZipCodeUS()
+        //{
+        //    return new ZipCodeValidator();
+        //}
 
-        #endregion USA Validators
+        //#endregion USA Validators
 
-        #region Mexico Validators
+        //#region Mexico Validators
 
-        /// <summary>
-        /// Creates a postal code validation rule for Mexico.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CodigoPostalValidator"/>.</returns>
-        public static IValidatorRule CodigoPostalMX()
-        {
-            return new CodigoPostalValidator();
-        }
+        ///// <summary>
+        ///// Creates a postal code validation rule for Mexico.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CodigoPostalValidator"/>.</returns>
+        //public static IValidatorRule CodigoPostalMX()
+        //{
+        //    return new CodigoPostalValidator();
+        //}
 
-        /// <summary>
-        /// Creates a CURP validation rule for Mexico.
-        /// </summary>
-        /// <returns>An instance of the <see cref="CURPValidator"/>.</returns>
-        public static IValidatorRule CURP()
-        {
-            return new CURPValidator();
-        }
+        ///// <summary>
+        ///// Creates a CURP validation rule for Mexico.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="CURPValidator"/>.</returns>
+        //public static IValidatorRule CURP()
+        //{
+        //    return new CURPValidator();
+        //}
 
-        /// <summary>
-        /// Creates an RFC validation rule for Mexico.
-        /// </summary>
-        /// <returns>An instance of the <see cref="RFCValidator"/>.</returns>
-        public static IValidatorRule RFC()
-        {
-            return new RFCValidator();
-        }
+        ///// <summary>
+        ///// Creates an RFC validation rule for Mexico.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="RFCValidator"/>.</returns>
+        //public static IValidatorRule RFC()
+        //{
+        //    return new RFCValidator();
+        //}
 
-        #endregion Mexico Validators
+        //#endregion Mexico Validators
 
-        #region Chile Validators
+        //#region Chile Validators
 
-        /// <summary>
-        /// Creates a RUT validation rule for Chile.
-        /// </summary>
-        /// <returns>An instance of the <see cref="RUTValidator"/>.</returns>
-        public static IValidatorRule RUT()
-        {
-            return new RUTValidator();
-        }
+        ///// <summary>
+        ///// Creates a RUT validation rule for Chile.
+        ///// </summary>
+        ///// <returns>An instance of the <see cref="RUTValidator"/>.</returns>
+        //public static IValidatorRule RUT()
+        //{
+        //    return new RUTValidator();
+        //}
 
-        #endregion Chile Validators
+        //#endregion Chile Validators
     }
 }
