@@ -18,8 +18,9 @@
 	  <RepositoryType>git</RepositoryType>
 	  <RepositoryUrl>https://github.com/Sylsoft-Software-Design/SylSoft.Utils.Validators</RepositoryUrl>
 	  <SignAssembly>False</SignAssembly>
+	  
 	  <VersionPrefix>0.4</VersionPrefix>
-	  <VersionSuffix>a</VersionSuffix>
+	  <VersionSuffix>b</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -54,18 +55,9 @@
     <Folder Include="Validators\Global\" />
   </ItemGroup>
 
-	<PropertyGroup>
-		<PackageIcon>icon.png</PackageIcon>
-	</PropertyGroup>
-
 	<ItemGroup>
-		<None Include="icon.png">
-			<Pack>false</Pack>
-			<PackagePath>icon.png</PackagePath>
-		</None>
+		<None Include="icon.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
-
-
 
 	<ItemGroup>
 		<None Include="readme.md" Pack="true" PackagePath="\" />
