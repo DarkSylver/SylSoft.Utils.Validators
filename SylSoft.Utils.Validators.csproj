@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	  <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
 	  <Description>SylSoft.Utils.Validators is a comprehensive library for .NET validation, including global and country-specific rules, designed to be lightweight, extensible, and fully offline.</Description>
 	  <Deterministic>false</Deterministic>
+	  <LangVersion>8.0</LangVersion>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <ImplicitUsings>enable</ImplicitUsings>
+	  <ImplicitUsings>disable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
 	  <OutputType>Library</OutputType>
 	  <PackageIcon>icon.png</PackageIcon>
@@ -18,7 +19,7 @@
 	  <SignAssembly>False</SignAssembly>
 	  
 	  <VersionPrefix>0.4</VersionPrefix>
-	  <VersionSuffix>c</VersionSuffix>
+	  <VersionSuffix>d</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
@@ -59,6 +60,10 @@
 
 	<ItemGroup>
 		<None Include="LICENSE" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EditorConfigFiles Remove="C:\Users\Cristian Zangaro\Source\Workspaces\SylSoft.Utils.Validators\.editorconfig" />
 	</ItemGroup>
 
 </Project>
