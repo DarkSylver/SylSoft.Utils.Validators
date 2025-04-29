@@ -19,7 +19,7 @@
 	  <SignAssembly>False</SignAssembly>
 	  
 	  <VersionPrefix>0.4</VersionPrefix>
-	  <VersionSuffix>d</VersionSuffix>
+	  <VersionSuffix>e</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
