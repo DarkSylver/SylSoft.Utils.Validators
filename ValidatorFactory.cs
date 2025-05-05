@@ -255,6 +255,28 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Gets the minimum length required for a strong password.
+        /// </summary>
+        /// <returns>
+        /// Minimum length required for a strong password.
+        /// </returns>
+        public static int PasswordStrengthMinimumLength()
+        {
+            return PasswordStrengthValidator.GetMinimumLength();
+        }
+
+        /// <summary>
+        /// Gets the minimum length required for a strong password.
+        /// </summary>
+        /// <returns>
+        /// Minimum length required for a strong password.
+        /// </returns>
+        public static int PasswordStrengthSpecialCharLength()
+        {
+            return PasswordStrengthValidator.GetSpecialCharLength();
+        }
+
+        /// <summary>
         /// Validates if the input string is a valid phone number.
         /// </summary>
         /// <returns>
