@@ -99,6 +99,9 @@ bool isFirstDayOfMonth = dateService.IsFirstDayOfMonth(DateTime.Today);
 ### Chile (WIP)
 - RUTValidator
 
+
+_(WIP) stands for "Work In Progress." It indicates that the validators marked with this label are under development and may not be fully implemented or tested. Users should be aware that these features might change or may not be entirely available in the current version._
+
 ---
 
 ## 🛡️ License
