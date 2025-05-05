@@ -69,7 +69,7 @@ bool isFirstDayOfMonth = dateService.IsFirstDayOfMonth(DateTime.Today);
 - LuhnValidator
 - DateValidator (and Date service)
 
-### Argentina
+### Argentina (WIP)
 - CUILValidator
 - CUITValidator
 - DNIValidator
@@ -78,25 +78,25 @@ bool isFirstDayOfMonth = dateService.IsFirstDayOfMonth(DateTime.Today);
 - PatenteValidator
 - TelefonoValidator
 
-### Brazil
+### Brazil (WIP)
 - CPFValidator
 - CNPJValidator
 
-### Spain
+### Spain (WIP)
 - NIFValidator
 - NIEValidator
 - CIFValidator
 
-### USA
+### USA (WIP)
 - SSNValidator
 - ZipCodeValidator
 
-### Mexico
+### Mexico (WIP)
 - RFCValidator
 - CURPValidator
 - CodigoPostalValidator
 
-### Chile
+### Chile (WIP)
 - RUTValidator
 
 ---
