@@ -50,7 +50,7 @@
 		  net9.0-windows
 	  </TargetFrameworks>
 	  <VersionPrefix>0.4</VersionPrefix>
-	  <VersionSuffix>k</VersionSuffix>
+	  <VersionSuffix>l</VersionSuffix>
   </PropertyGroup>
 
   <ItemGroup>
