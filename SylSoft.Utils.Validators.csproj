@@ -1,85 +1,92 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	  <AssemblyName>SylSoft.Utils.Validators</AssemblyName>
-	  <Description>SylSoft.Utils.Validators is a comprehensive library for .NET validation, including global and country-specific rules, designed to be lightweight, extensible, and fully offline.</Description>
-	  <Deterministic>false</Deterministic>
-	  <LangVersion>8.0</LangVersion>
-	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <ImplicitUsings>disable</ImplicitUsings>
-	  <Nullable>enable</Nullable>
-	  <OutputType>Library</OutputType>
-	  <PackageIcon>icon.png</PackageIcon>
-	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
-	  <PackageProjectUrl>https://github.com/DarkSylver/SylSoft.Utils.Validators</PackageProjectUrl>
-	  <PackageReadmeFile>readme.md</PackageReadmeFile>
-	  <RepositoryType>git</RepositoryType>
-	  <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
-	  <RepositoryUrl>https://github.com/Sylsoft-Software-Design/SylSoft.Utils.Validators</RepositoryUrl>
-	  <RootNamespace>SylSoft.Utils.Validators</RootNamespace>
-	  <SignAssembly>False</SignAssembly>
-	  <SkipInvalidConfigurations>true</SkipInvalidConfigurations>
-	  <TargetFrameworks>
-		  netstandard2.0;
-		  netstandard2.1;
-		  netcoreapp2.0;
-		  netcoreapp2.1;
-		  netcoreapp2.2;
-		  netcoreapp3.0;
-		  netcoreapp3.1;
-		  net5.0;
-		  net5.0-windows;
-		  net6.0;
-		  net6.0-windows;
-		  net7.0;
-		  net7.0-windows;
-		  net8.0;
-		  net8.0-ios;
-		  net8.0-maccatalyst;
-		  net8.0-macos;
-		  net8.0-tvos;
-		  net8.0-browser;
-		  net8.0-windows;
-		  net9.0;
-		  net9.0-ios;
-		  net9.0-maccatalyst;
-		  net9.0-macos;
-		  net9.0-tvos;
-		  net9.0-browser;
-		  net9.0-windows
-	  </TargetFrameworks>
-	  <VersionPrefix>0.4</VersionPrefix>
-	  <VersionSuffix>l</VersionSuffix>
-  </PropertyGroup>
+	<PropertyGroup>
+		<AssemblyName>SylSoft.Utils.Validators</AssemblyName>
+		<Description>SylSoft.Utils.Validators is a comprehensive library for .NET validation, including global and country-specific rules, designed to be lightweight, extensible, and fully offline.</Description>
+		<Deterministic>false</Deterministic>
+		<LangVersion>8.0</LangVersion>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutputType>Library</OutputType>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/DarkSylver/SylSoft.Utils.Validators</PackageProjectUrl>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RepositoryUrl>https://github.com/Sylsoft-Software-Design/SylSoft.Utils.Validators</RepositoryUrl>
+		<RootNamespace>SylSoft.Utils.Validators</RootNamespace>
+		<SignAssembly>False</SignAssembly>
+		<SkipInvalidConfigurations>true</SkipInvalidConfigurations>
+		<IsWindows Condition="'$(OS)' == 'Windows_NT'">true</IsWindows>
+		<TargetFrameworks Condition="'$(IsWindows)' == 'true'">
+			net472;
+			net48;
+			net481;
+			netstandard2.0;
+			netstandard2.1;
+			netcoreapp2.0;
+			netcoreapp2.1;
+			netcoreapp2.2;
+			netcoreapp3.0;
+			netcoreapp3.1;
+			net5.0;
+			net5.0-windows;
+			net6.0;
+			net6.0-windows;
+			net7.0;
+			net7.0-windows;
+			net8.0;
+			net8.0-browser;
+			net8.0-windows;
+			net9.0;
+			net9.0-browser;
+			net9.0-windows
+		</TargetFrameworks>
 
-  <ItemGroup>
-    <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IDateValidationService\IDateValidationService.cs" Link="Interfaces\IDateValidationService.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IValidatorRule\IValidatorRule.cs" Link="Interfaces\IValidatorRule.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.AlphanumericValidator\AlphanumericValidator.cs" Link="Validators\Global\AlphanumericValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.Base64Validator\Base64Validator.cs" Link="Validators\Global\Base64Validator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.CreditCardValidator\CreditCardValidator.cs" Link="Validators\Global\CreditCardValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.DateService\DateService.cs" Link="Validators\Global\DateService.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.EmailValidator\EmailValidator.cs" Link="Validators\Global\EmailValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.GuidValidator\GuidValidator.cs" Link="Validators\Global\GuidValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.HexColorValidator\HexColorValidator.cs" Link="Validators\Global\HexColorValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.IBANValidator\IBANValidator.cs" Link="Validators\Global\IBANValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.IpValidator\IpValidator.cs" Link="Validators\Global\IpValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.LuhnValidator\LuhnValidator.cs" Link="Validators\Global\LuhnValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.NumericValidator\NumericValidator.cs" Link="Validators\Global\NumericValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.PasswordStrengthValidator\PasswordStrengthValidator.cs" Link="Validators\Global\PasswordStrengthValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.PhoneValidator\PhoneValidator.cs" Link="Validators\Global\PhoneValidator.cs" />
-    <Compile Include="..\SylSoft.Utils.Validators.Global.UrlValidator\UrlValidator.cs" Link="Validators\Global\UrlValidator.cs" />
-  </ItemGroup>
+		<TargetFrameworks Condition="'$(IsWindows)' != 'true'">
+			net8.0-ios;
+			net8.0-maccatalyst;
+			net8.0-macos;
+			net8.0-tvos;
+			net9.0-ios;
+			net9.0-maccatalyst;
+			net9.0-macos;
+			net9.0-tvos
+		</TargetFrameworks>
+		<VersionPrefix>0.4</VersionPrefix>
+		<VersionSuffix>m</VersionSuffix>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="libphonenumber-csharp" Version="9.0.4" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IDateValidationService\IDateValidationService.cs" Link="Interfaces\IDateValidationService.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Core.Interfaces.IValidatorRule\IValidatorRule.cs" Link="Interfaces\IValidatorRule.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.AlphanumericValidator\AlphanumericValidator.cs" Link="Validators\Global\AlphanumericValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.Base64Validator\Base64Validator.cs" Link="Validators\Global\Base64Validator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.CreditCardValidator\CreditCardValidator.cs" Link="Validators\Global\CreditCardValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.DateService\DateService.cs" Link="Validators\Global\DateService.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.EmailValidator\EmailValidator.cs" Link="Validators\Global\EmailValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.GuidValidator\GuidValidator.cs" Link="Validators\Global\GuidValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.HexColorValidator\HexColorValidator.cs" Link="Validators\Global\HexColorValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.IBANValidator\IBANValidator.cs" Link="Validators\Global\IBANValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.IpValidator\IpValidator.cs" Link="Validators\Global\IpValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.LuhnValidator\LuhnValidator.cs" Link="Validators\Global\LuhnValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.NumericValidator\NumericValidator.cs" Link="Validators\Global\NumericValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.PasswordStrengthValidator\PasswordStrengthValidator.cs" Link="Validators\Global\PasswordStrengthValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.PhoneValidator\PhoneValidator.cs" Link="Validators\Global\PhoneValidator.cs" />
+		<Compile Include="..\SylSoft.Utils.Validators.Global.UrlValidator\UrlValidator.cs" Link="Validators\Global\UrlValidator.cs" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Validators\Global\" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="libphonenumber-csharp" Version="9.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Interfaces\" />
+		<Folder Include="Validators\Global\" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="icon.png" Pack="true" PackagePath="" />
@@ -94,7 +101,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EditorConfigFiles Remove="C:\Users\Cristian Zangaro\Source\Workspaces\SylSoft.Utils.Validators\.editorconfig" />
+		<EditorConfigFiles Remove="C:\Users\Cristian Zangaro\Source\Workspaces\SylSoft.Utils.Validators\.editorconfig" />
 	</ItemGroup>
-
 </Project>
