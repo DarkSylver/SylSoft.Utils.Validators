@@ -246,6 +246,64 @@ namespace SylSoft.Utils.Validators
         }
 
         /// <summary>
+        /// Evaluates whether a given input string satisfies standard or customized password strength requirements.
+        /// </summary>
+        /// <remarks>
+        /// This is a static convenience method intended to be called directly without instantiating a validator.
+        /// Internally, it delegates the validation process to an instance of <see cref="PasswordStrengthValidator"/>.
+        /// 
+        /// The method supports customizable rules including:
+        /// - Minimum required length
+        /// - Whether uppercase, lowercase, digits, or special characters are required
+        /// - Bypassing special character requirement for longer passphrases
+        /// 
+        /// If no parameters are provided, the method uses the default policy:
+        /// Minimum 8 characters, at least one uppercase, one lowercase, one digit, and one special character
+        /// (or 16+ characters to skip special requirement).
+        /// </remarks>
+        /// <param name="input">
+        /// The password string to be validated. Cannot be null, empty, or consist solely of whitespace characters.
+        /// </param>
+        /// <param name="minimumLength">
+        /// Optional. Defines the minimum number of characters required. Default is 8 if not provided.
+        /// </param>
+        /// <param name="specialCharLength">
+        /// Optional. If the password is this length or longer, the special character requirement is skipped. Default is 16.
+        /// </param>
+        /// <param name="requireUpper">
+        /// Optional. Indicates whether at least one uppercase character is mandatory. Default is true.
+        /// </param>
+        /// <param name="requireLower">
+        /// Optional. Indicates whether at least one lowercase character is mandatory. Default is true.
+        /// </param>
+        /// <param name="requireSpecial">
+        /// Optional. Indicates whether at least one special character is mandatory unless the password is long enough. Default is true.
+        /// </param>
+        /// <returns>
+        /// Returns <c>true</c> if the password meets all applicable strength requirements; otherwise, returns <c>false</c>.
+        /// </returns>
+        /// <exception cref="ArgumentNullException">
+        /// The method does not directly throw this exception, but it delegates to <see cref="PasswordStrengthValidator.ValidateWithRules"/> which may reject null or whitespace inputs by returning false.
+        /// </exception>
+        public static bool PasswordStrength(string input,
+            int? minimumLength = null,
+            int? specialCharLength = null,
+            bool? requireUpper = null,
+            bool? requireLower = null,
+            bool? requireSpecial = null)
+        {
+            // Delegate the validation to the PasswordStrengthValidator using the provided rules
+            return new PasswordStrengthValidator().ValidateWithRules(
+                input,
+                minimumLength,
+                specialCharLength,
+                requireUpper,
+                requireLower,
+                requireSpecial);
+        }
+
+
+        /// <summary>
         /// Creates a password strength validation rule.
         /// </summary>
         /// <returns>An instance of the <see cref="PasswordStrengthValidator"/>.</returns>

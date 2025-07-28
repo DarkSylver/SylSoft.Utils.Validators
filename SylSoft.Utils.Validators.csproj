@@ -57,7 +57,7 @@
 			net9.0-tvos
 		</TargetFrameworks>
 		<VersionPrefix>0.4</VersionPrefix>
-		<VersionSuffix>m</VersionSuffix>
+		<VersionSuffix>n</VersionSuffix>
 	</PropertyGroup>
 
 	<ItemGroup>
