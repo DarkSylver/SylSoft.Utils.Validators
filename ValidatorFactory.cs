@@ -1,5 +1,6 @@
 ﻿using SylSoft.Utils.Validators.Core.Interfaces;
 using SylSoft.Utils.Validators.Global;
+using SylSoft.Utils.Validators.Global.PasswordStrengthValidator;
 
 namespace SylSoft.Utils.Validators
 {
@@ -259,7 +260,7 @@ namespace SylSoft.Utils.Validators
         /// 
         /// If no parameters are provided, the method uses the default policy:
         /// Minimum 8 characters, at least one uppercase, one lowercase, one digit, and one special character
-        /// (or 16+ characters to skip special requirement).
+        /// (or 16+ characters to skip the special character requirement).
         /// </remarks>
         /// <param name="input">
         /// The password string to be validated. Cannot be null, empty, or consist solely of whitespace characters.
@@ -268,28 +269,32 @@ namespace SylSoft.Utils.Validators
         /// Optional. Defines the minimum number of characters required. Default is 8 if not provided.
         /// </param>
         /// <param name="specialCharLength">
-        /// Optional. If the password is this length or longer, the special character requirement is skipped. Default is 16.
+        /// Optional. If the password length is equal to or exceeds this value, the special character requirement is waived. Default is 16.
         /// </param>
         /// <param name="requireUpper">
-        /// Optional. Indicates whether at least one uppercase character is mandatory. Default is true.
+        /// Optional. Indicates whether at least one uppercase character is required. Default is true.
         /// </param>
         /// <param name="requireLower">
-        /// Optional. Indicates whether at least one lowercase character is mandatory. Default is true.
+        /// Optional. Indicates whether at least one lowercase character is required. Default is true.
+        /// </param>
+        /// <param name="requireNumbers">
+        /// Optional. Indicates whether at least one numeric digit is required. Default is true.
         /// </param>
         /// <param name="requireSpecial">
-        /// Optional. Indicates whether at least one special character is mandatory unless the password is long enough. Default is true.
+        /// Optional. Indicates whether at least one special character is required (unless the password is long enough to waive this requirement). Default is true.
         /// </param>
         /// <returns>
-        /// Returns <c>true</c> if the password meets all applicable strength requirements; otherwise, returns <c>false</c>.
+        /// Returns <c>true</c> if the password meets all specified strength requirements; otherwise, returns <c>false</c>.
         /// </returns>
         /// <exception cref="ArgumentNullException">
-        /// The method does not directly throw this exception, but it delegates to <see cref="PasswordStrengthValidator.ValidateWithRules"/> which may reject null or whitespace inputs by returning false.
+        /// This method does not throw an exception directly, but the validator may reject null or whitespace inputs by returning <c>false</c>.
         /// </exception>
         public static bool PasswordStrength(string input,
             int? minimumLength = null,
             int? specialCharLength = null,
             bool? requireUpper = null,
             bool? requireLower = null,
+            bool? requireNumbers = null,
             bool? requireSpecial = null)
         {
             // Delegate the validation to the PasswordStrengthValidator using the provided rules
@@ -299,6 +304,7 @@ namespace SylSoft.Utils.Validators
                 specialCharLength,
                 requireUpper,
                 requireLower,
+                requireNumbers,
                 requireSpecial);
         }
 
